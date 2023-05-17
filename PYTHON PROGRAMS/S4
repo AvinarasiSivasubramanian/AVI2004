@@ -1,0 +1,9 @@
+'''ACB, the Omni Bus Company, has decided to give a 20% traveling fare concession for senior citizens; the actual fare will be Rs 1020. The upper age limit for senior citizens is above 60'''
+
+age=int(input("Enter the age="))
+year=int(input("Enter the year of birth="))
+if((2023-year)>=60 and age>60):
+   t=1020*(20/100)
+   print("Year omni bus charge is=",t)
+else:
+    print("Your omni bus charge is 1020")
