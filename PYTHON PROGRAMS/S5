@@ -1,0 +1,13 @@
+#Three numbers form a Pythogorean triple 
+
+a=float(input("Enter adjecent side="))
+b=float(input("Enter opposite side="))
+c=float(input("Enter hyponutinuse="))
+x=(a**2)+(b**2)
+y=c**2
+if(x==y):
+    print("1")
+elif(x!=y):
+    print("0")
+else:
+    print("Invalid entery")
