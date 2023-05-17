@@ -1,0 +1,15 @@
+#A company has decided to give bonuses to their employees based on their service.
+
+c=int(input("Enter the salary"))
+y=int(input("Enter the num.of years worked"))
+if(y>10):
+    x=s*(10/100)
+    print("The bonus=",x)
+elif(y>6 and y<=10):
+    x=s*(8/100)
+    print("The bonus=",x)
+elif(y<=6):
+    x=s*(5/100)
+    print("The bonus=",x)
+else:
+    print("Invalid valued entry")
