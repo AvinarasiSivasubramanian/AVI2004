@@ -1,0 +1,15 @@
+#Accept the name, age, gender (‘M’ or ‘F’), number of days, and display the wages accordingly.
+
+b=str(input("Enter the name"))
+a=int(input("Enter the age"))
+c=int(input("Enter the gender 1(male),2(female)"))
+if(a>=18 and a<30 and c==1):
+    print("The wages will be Rs 700 per day")
+elif(a>=18 and a<30 and c==2):
+    print("The wages will be Rs 750 per day")
+elif(a>=30 and a<=40 and c==1):
+    print("The wages will be Rs 800 per day")
+elif(a>=30 and a<=40 and c==2):
+    print("The wages will be Rs 850 per day")
+else:
+    print("Invalid Entry")

@@ -1,6 +1,6 @@
 #A company has decided to give bonuses to their employees based on their service.
 
-c=int(input("Enter the salary"))
+s=int(input("Enter the salary"))
 y=int(input("Enter the num.of years worked"))
 if(y>10):
     x=s*(10/100)
