@@ -1,0 +1,9 @@
+#Write a Python program to calculate the surface volume and area of a cylinder.
+
+r=int(input("Enter the radius="))
+h=int(input("Enter the hight="))
+v=3.14*r*r*h
+a=(2*3.14*r*h)+(2*3.14*r**2)
+print("The volume is=",v)
+print("The surface area is=",a)
+      
