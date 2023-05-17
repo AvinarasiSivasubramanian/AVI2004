@@ -1,0 +1,9 @@
+#A Rotary Club has decided to conduct a blood donation camp.
+
+a=str(input("Enter the name"))
+b=int(input("Enter the age"))
+c=int(input("Enter the weight"))
+if(b>18 and c>40):
+    print("Eligible to blood donate")
+else:
+    print("Not eligible")
