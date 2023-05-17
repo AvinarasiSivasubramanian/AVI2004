@@ -1,6 +1,6 @@
 #Write a program to display the prime in the given range.
 
-tart=int(input ("Enter the starting Value: "))  
+start=int(input ("Enter the starting Value: "))  
 end=int(input ("Enter the ending Value: "))  
 print ("The Prime Numbers in the range are: ")  
 for number in range (start,end+1):  
