@@ -1,0 +1,7 @@
+#Write a Python program to solve the equation z = |x  y| * (x + y).
+
+x=int(input("Enter the x="))
+y=int(input("Enter the y="))
+a=abs(x-y)
+z=a+(x+y)
+print("The value of z=",z)
