@@ -3,7 +3,7 @@
 print("Tables")
 start=int(input("Enter the starting range"))
 end=int(input("Enter the ending range"))
-s=int(input("Enter the starting number"))
+s=int(input("Enter the start number"))
 e=int(input("Enter the ending number"))
 for i in range(start,end):
     for j in range(s,e):
