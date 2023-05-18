@@ -1,0 +1,9 @@
+#Write a program that displays a temperature conversion table  for degrees Celsius and degrees Fahrenheit.
+
+n=int(input("Enter the ending celcius range"))
+print('C   F')
+C = 0
+while C <= n:
+    F = 9 * C / 5 + 32
+    print(C,F)
+    C += 10
