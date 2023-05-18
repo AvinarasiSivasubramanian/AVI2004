@@ -1,0 +1,13 @@
+#Write a program to accept the numbers continuously; when we enter"-1” it should stop accepting the input and at the same time display the number of even numbers and odd numbers that were entered.
+
+s=int(input("Enter the starting range"))
+e=int(input("Enter the ending range"))
+count_odd = 0
+count_even = 0
+for x in range(s,e):
+        if(x%2==0):
+    	     count_even+=1
+        else:
+    	     count_odd+=1
+print("Number of even numbers :",count_even)
+print("Number of odd numbers :",count_odd)
