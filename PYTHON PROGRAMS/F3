@@ -45,12 +45,12 @@ elif C==4:
     l=int(input("Enter length: "))
     w=int(input("Enter width: "))
     h=int(input("Enter height: "))
-    recpri(l,h,w)
+    rectangular_prismpri(l,h,w)
 elif C==5:
     b=int(input("Enter breadth: "))
     h=int(input("Enter height: "))
     l=int(input("Enter length: "))
     s=int(input("Enter slantheight: "))
-    tripri(b,h,s,l)
+    triangular_prism(b,h,s,l)
 else:
     print("Invalid entry")
