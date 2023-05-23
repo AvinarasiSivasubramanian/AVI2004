@@ -1,0 +1,56 @@
+''' Find area and volumesphere(), cylinder(), cone(), rectangular_prism(), and triangular_prism()'''
+
+print("1-Sphere \n 2-Cylinder \n 3-Cone \n 4-Rectanguler prism \n 5-Triangular prism")
+C=int(input("Enter your choice(1,2,3,4,5): "))
+
+def sphere(pi,r):
+    s=4*pi*r*r
+    v=(4/3)*pi*(r**3)
+    print("Surfacearea of the sphere = ",s)
+    print("Volume of the sphere = ",v)
+def cylinder(pi,r,h):
+    s=(2*pi*r*r)+(2*pi*r*h)
+    v=pi*r*r*h
+    print("Surfacearea of the cylinder = ",s)
+    print("Volume of the cylinder = ",v)
+def cone(pi,r,s,h):
+    s=(pi*r*s)+(pi*r*r)
+    v=(1/3)*pi*r*r*h
+    print("Surfacearea of the cone = ",s)
+    print("Volume of the cone = ",v)
+def rectangular_prism(l,h,w):
+    s=2*((l*w)+(l*h)+(w*h))
+    v=l*w*h
+    print("Surfacearea of the rectangular prism = ",s)
+    print("Volume of the rectanguler prism = ",v)
+def triangular_prism(b,h,s,l):
+    s=((b*h)+2*(l*s)+(l*b))
+    v=(1/2)*(b*l)*h
+    print("Surfacearea of the triangular prism = ",s)
+    print("Volume of the triangular prism = ",v)
+
+if C==1:
+    r=int(input("Enter radius: "))
+    sphere(3.14,r)
+elif C==2:
+    r=int(input("Enter radius: "))
+    h=int(input("Enter height: "))
+    cylinder(3.14,r,h)
+elif C==3:
+    r=int(input("Enter radius: "))
+    h=int(input("Enter height: "))
+    s=int(input("Enter slantheight: "))
+    cone(3.14,r,s,h)
+elif C==4:
+    l=int(input("Enter length: "))
+    w=int(input("Enter width: "))
+    h=int(input("Enter height: "))
+    recpri(l,h,w)
+elif C==5:
+    b=int(input("Enter breadth: "))
+    h=int(input("Enter height: "))
+    l=int(input("Enter length: "))
+    s=int(input("Enter slantheight: "))
+    tripri(b,h,s,l)
+else:
+    print("Invalid entry")

@@ -1,0 +1,19 @@
+'''Write a python code with function interest_calculation() which calculates the simple interest. The program should take the name of the customer, age of the customer, gender (‘M’ of ‘F’), principal amount(P) and number of years (N) as an input.
+'''
+
+n=input("Enter the name of the customer:")
+a=int(input("Enter the age of the customer:"))
+g=input("Enter the gender of the customer:")
+p=int(input('The principal is'))
+t=int(input('The time period is'))
+r=int(input('The rate of interest is'))
+def simpleinterest(p,t,r):
+    print('The principal is', p)
+    print('The time period is', t)
+    print('The rate of interest is',r)
+     
+    si = (p * t * r)/100
+     
+    print('The Simple Interest is', si)
+    return si
+simpleinterest(p, t, r)
