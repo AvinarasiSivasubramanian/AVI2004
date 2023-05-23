@@ -4,10 +4,17 @@ s=int(input("Enter the starting range"))
 e=int(input("Enter the ending range"))
 count_odd = 0
 count_even = 0
+#x=int(input("Enter the number"))
+
 for x in range(s,e):
-        if(x%2==0):
-    	     count_even+=1
-        else:
-    	     count_odd+=1
+    x=int(input("Enter the number"))
+    if x==-1:
+        break
+    if x%2==0:
+        count_even+=1
+    else:
+        count_odd+=1   
+	
+
 print("Number of even numbers :",count_even)
 print("Number of odd numbers :",count_odd)
