@@ -1,0 +1,11 @@
+#Write a python code which checks whether the input number is a Prefect Square of not using a function.
+
+def perfectsquare(n):  
+    i = 1  
+    while i * i <= n:  
+        if i * i == n:  
+            return True  
+        i += 1  
+    return False  
+print(perfectsquare(36)) 
+print(perfectsquare(99))
