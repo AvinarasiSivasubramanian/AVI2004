@@ -1,0 +1,9 @@
+'''Write a python program to iterate over dictionaries using for loop.'''
+
+brother = {'Name': 'Anbalan,', 'Age': '17,','DOB':'26.06.2007,','Father': 'Sivasubramanian,', 'Mother': 'Pushpalatha,','Sister':'Avinarasi.'}
+
+print('Dictionary Key-Value pairs are:')
+for i in brother:
+    print(i, '---', brother[i])
+
+
