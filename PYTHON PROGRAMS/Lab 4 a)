@@ -1,0 +1,13 @@
+'''Write a python program to convert tuple to a string'''
+
+
+
+def contuple(tuple):  
+  str=''  
+  for i in tuple:  
+    str=str+i  
+  return str  
+  
+tuple=('a','v','i','n','a',' ','a','n','b','u')
+string=contuple(tuple)  
+print(string)  
