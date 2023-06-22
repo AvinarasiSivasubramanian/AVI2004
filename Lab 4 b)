@@ -1,0 +1,16 @@
+
+
+
+def Rev(tuples):
+    tup = tuples[::-1]
+    return tup
+     
+
+'''tuples = ('a','n','b','a','l','a','n',' ','s')
+print(Rev(tuples))'''
+
+n=input("Enter a string")
+tuples=tuple(n)
+print(tuples)
+
+print(Rev(tuples))
