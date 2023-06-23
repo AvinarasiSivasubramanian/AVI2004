@@ -1,0 +1,29 @@
+'''A program should read “n” positive integers from the user and append it to the list, and if the list contains prime numbers return “True” and number of prime numbers, else “False”.'''
+
+
+def test(nums):
+    return all(is_prime(i) for i in nums)
+def is_prime(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+    else:
+        for x in range(2,n):
+            if(n % x==0):
+                return False
+        return True
+    
+    
+n = int (input ("Enter number of elements: ")) 
+nums = []
+for i in range (n):
+    x = int(input())
+    nums.append(x)
+print("List:", nums)
+
+print("Original list of numbers:")
+print(nums)
+print("Check if each number is prime in the said list of numbers:")
+print(test(nums))
+
