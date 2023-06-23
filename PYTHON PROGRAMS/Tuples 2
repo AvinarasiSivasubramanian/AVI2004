@@ -1,0 +1,18 @@
+'''Write a python program that has a list of positive and negative numbers.Make a new tuple that has only positive values from the list.'''
+
+
+tuple_str = input("Enter a tuple (e.g., 1 2 3): ")
+
+
+tuple_elements = tuple_str.split()
+
+
+tuple_values = tuple(map(int, tuple_elements))
+
+print("Tuple:", tuple_values)
+
+
+
+positive_numbers = tuple(num for num in tuple_values if num > 0)
+
+print(positive_numbers)
