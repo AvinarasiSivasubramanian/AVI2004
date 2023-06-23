@@ -1,0 +1,22 @@
+'''Write a python program that reads integers from the user and stores them in a list. Your program should continue reading values until the user enters 0. Then it should display all of the values entered by the user (except for the 0) in ascending order (The list itself to be sorted).'''
+
+
+'''n = int (input ("Enter number of elements: ")) 
+list = []
+for i in range (n):
+    x = int(input())
+    list.append(x)
+print("List:", list)'''
+
+n=input("Enter the elements")
+a = list()
+while True:
+    val = int(input())
+    if val != 0:
+        a.append(val)
+    else:
+        a.sort()
+        for i in a:
+            print(i)
+        break
+
