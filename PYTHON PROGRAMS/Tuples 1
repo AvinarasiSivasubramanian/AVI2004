@@ -1,0 +1,24 @@
+'''Write a python program that scans an email address and forms a tuple of user name and domain'''
+
+import re
+
+def extract_username_and_domain(email):
+    pattern = r'^([a-zA-Z0-9_.+-]+)@([a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)$'
+    match = re.match(pattern, email)
+    
+    if match:
+        username = match.group(1)
+        domain = match.group(2)
+        return (username, domain)
+    
+    return None
+
+email_address = input("Enter the Email Address:")
+result = extract_username_and_domain(email_address)
+
+if result:
+    username, domain = result
+    print("User name:", username)
+    print("Domain name:", domain)
+else:
+    print("Invalid email address")
