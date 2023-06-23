@@ -1,0 +1,29 @@
+'''Write a program that generate a set of number that are prime numbers (1-50) and another set of numbers divisible by 5 (1-50),then apply union, intersection, difference and symmetric difference on the resultant sets.'''
+
+
+ef is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_numbers = set(num for num in range(1, 51) if is_prime(num))
+print("Prime numbers",prime_numbers)
+
+divisible_by_5 = set(num for num in range(1, 51) if num % 5 == 0)
+print("divisible by 5",divisible_by_5)
+
+union_set = prime_numbers.union(divisible_by_5)
+print("Union Set:", union_set)
+
+intersection_set = prime_numbers.intersection(divisible_by_5)
+print("Intersection Set:", intersection_set)
+
+difference_set = prime_numbers.difference(divisible_by_5)
+print("Difference Set:", difference_set)
+
+symmetric_difference_set = prime_numbers.symmetric_difference(divisible_by_5)
+print("Symmetric Difference Set:", symmetric_difference_set)
