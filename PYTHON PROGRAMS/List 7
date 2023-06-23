@@ -1,0 +1,21 @@
+'''Write a python program that removes duplicates from the given list and generate the new list without duplicates.'''
+
+
+#list = [10,20,30,20,10,50,60,40,80,50,40]
+
+a =int( input ("Enter number of elements: "))
+list = []
+for i in range (a):
+    x = int(input())
+    list.append(x)
+print("List:", list)
+
+
+dup_items = set()
+uniq_items = []
+for x in list:
+    if x not in dup_items:
+        uniq_items.append(x)
+        dup_items.add(x)
+
+print(dup_items)
