@@ -1,0 +1,47 @@
+'''Write a python program which reads “n” number of integers from the user and generates a separate list containing even and odd numbers.'''
+
+
+#list1 = [10, 21, 4, 45, 66, 93, 1]
+list1 = []
+ 
+
+'''n = int(input("Enter number of elements : "))
+ 
+
+for i in range(0, n):
+    x = int(input())
+    
+    list1.append(x) 
+ 
+print(list1)'''
+
+n = int(input("Enter number of elements in the list : "))
+
+for i in range(0, n):
+   print("Enter element No-{}: ".format(i+1))
+   elm = int(input())
+   list1.append(elm) 
+print("The entered list is: \n",list1)
+ 
+even_count = 0
+odd_count = 0
+ 
+
+for num in list1:
+ 
+    
+    if num % 2 == 0:
+        print("The even numbers are=",num)
+        even_count += 1
+ 
+    else:
+        print("The odd numbers are=",num)
+        odd_count += 1
+        
+#print("The even numbers are=",num)
+#print("The odd numbers are=",num)
+print("Even numbers in the list: ", even_count)
+print("Odd numbers in the list: ", odd_count)
+ 
+ 
+
