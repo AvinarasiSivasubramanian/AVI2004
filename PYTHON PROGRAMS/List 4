@@ -1,0 +1,8 @@
+'''Write a python program that reads the string, encode each character in a string using ascii values and store the ascii value in the list. The program reads the strings from the user, and stores the individual characters ascii value to the list.'''
+
+print ("Please enter the String: ", end = "")  
+string = input()  
+string_length = len(string)  
+for K in string:  
+    ASCII = ord(K)  
+    print (K, "\t", ASCII)  
