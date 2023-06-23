@@ -1,0 +1,21 @@
+'''Write a python program which reads “n” words from the user, store it in the list and display the length of each word and display the longest word in the list.'''
+
+
+def find_longest_word(word):
+    word_len = []
+    for n in word:
+        word.append((len(n), n))
+    word.sort()
+    return word_len[-1][0], word_len[-1][1]
+#result = find_longest_word(["Enter the words"])
+
+n =input ("Enter number of elements: ")
+a = []
+for i in n:
+    x = input()
+    a=list.append(x)
+print("List:",a)
+
+print("\nLongest word: ",n[1])
+print("Length of the longest word: ",n[0])
+
